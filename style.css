@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.keys {
+  padding: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.05s;
+  color: white;
+  border: solid 3px black;
+  background-color: hsl(0, 0%, 0%, 0.5);
+}
+
+.keys kbd {
+  font-size: 20px;
+}
+
+.sound {
+  font-size: 10px;
+  color: yellow;
+}
+
+.active {
+  transform: scale(1.1);
+  border: solid 3px yellow;
+}
